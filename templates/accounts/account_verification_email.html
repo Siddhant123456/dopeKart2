@@ -1,0 +1,13 @@
+{% autoescape off %}
+
+Hi {{user.first_name}},
+
+Please Click on Below link to confirm your Registration
+
+http://{{domain}}{% url 'activate' uid token %}
+
+
+If You Think its now You, Please ignore This Email
+
+
+{% endautoescape %}
